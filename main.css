@@ -1,4 +1,9 @@
 #img-div > img {
   display: block;
   max-width: 100%;
+  margin: auto;
+}
+
+#img-caption {
+    text-align: center;
 }
