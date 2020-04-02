@@ -40,6 +40,30 @@ img {
 /*******************************************************************************
 *** END RESET RULES
 *******************************************************************************/
+body {
+  margin: 2.5rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  row-gap: 2rem;
+}
 
 #img-div > img {
   display: block;
