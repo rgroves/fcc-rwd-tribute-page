@@ -44,12 +44,36 @@ body {
   margin: 2.5rem;
 }
 
+p {
+  margin: 1.12em 0;
+}
+
 .header {
   grid-area: header;
 }
 
+.header--title {
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 0.67em 0;
+}
+
+.header--image {
+  display: block;
+  margin: auto;
+}
+
+.header--image-caption {
+  text-align: center;
+}
+
 .content {
   grid-area: content;
+}
+
+.section--title {
+  margin: 0.75em 0;
+  font-weight: bold;
 }
 
 .footer {
@@ -62,14 +86,4 @@ body {
     "header"
     "content"
     "footer";
-  row-gap: 2rem;
-}
-
-#img-div > img {
-  display: block;
-  margin: auto;
-}
-
-#img-caption {
-  text-align: center;
 }
