@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Montserrat&family=Turret+Road:wght@800&family=Libre+Barcode+39+Text&display=swap");
+
 /*******************************************************************************
 *** START RESET RULES
 *** Used the minimal reset rules from:
@@ -40,8 +42,21 @@ img {
 /*******************************************************************************
 *** END RESET RULES
 *******************************************************************************/
+html {
+  background-color: #000;
+}
+
 body {
-  margin: 2.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5em;
+  margin: 1.5em;
+}
+
+a {
+  color: white;
+  text-shadow: 2px 2px 4px red;
+  font-weight: bold;
 }
 
 p {
@@ -50,9 +65,11 @@ p {
 
 .header {
   grid-area: header;
+  text-align: center;
 }
 
 .header__title {
+  font-family: "Contrail One", cursive;
   font-size: 2em;
   font-weight: bolder;
   margin: 0.67em 0;
@@ -64,6 +81,9 @@ p {
 }
 
 .header__image-caption {
+  margin: -2em 0 3.5em;
+  font-size: 0.6em;
+  line-height: 1.25em;
   text-align: center;
 }
 
@@ -71,9 +91,18 @@ p {
   grid-area: content;
 }
 
+.section {
+  margin: 2em 0;
+  padding: 1em;
+  box-shadow: inset 0 0 0.25em 0.25em limegreen, 0 0 0.75em 0.75em limegreen;
+  border-radius: 15px;
+}
+
 .section__title {
   margin: 0.75em 0;
-  font-weight: bold;
+  font-family: "Turret Road", cursive;
+  color: limegreen;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -86,4 +115,23 @@ p {
     "header"
     "content"
     "footer";
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+.flatline {
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 2em;
+  line-height: 1.25em;
+  color: limegreen;
 }
