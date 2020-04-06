@@ -105,6 +105,20 @@ p {
   text-transform: uppercase;
 }
 
+.section__picture:nth-child(even) {
+  margin: 1.4em -50px 0;
+  shape-margin: 0.75em;
+  float: left;
+  shape-outside: url(img/book-left-shape.png);
+}
+
+.section__picture:nth-child(odd) {
+  margin: 0 -50px 0 0;
+  shape-margin: 0.75em;
+  float: right;
+  shape-outside: url(img/book-right-shape.png);
+}
+
 .footer {
   grid-area: footer;
 }
