@@ -105,18 +105,8 @@ p {
   text-transform: uppercase;
 }
 
-.section__picture:nth-child(even) {
-  margin: 1.4em -50px 0;
-  shape-margin: 0.75em;
-  float: left;
-  shape-outside: url(img/book-left-shape.png);
-}
-
-.section__picture:nth-child(odd) {
-  margin: 0 -50px 0 0;
-  shape-margin: 0.75em;
-  float: right;
-  shape-outside: url(img/book-right-shape.png);
+.section__picture {
+  display: none;
 }
 
 .footer {
@@ -148,4 +138,33 @@ nav li {
   font-size: 2em;
   line-height: 1.25em;
   color: limegreen;
+}
+
+@media (min-width: 320px) {
+  .section {
+  }
+  .section__picture {
+    display: block;
+    filter: drop-shadow(1px 1px 50px hotpink);
+  }
+
+  .section__picture:nth-child(even) {
+    margin: 1.4em -50px 0;
+    shape-margin: 0.75em;
+    float: left;
+    shape-outside: url(img/book-left-shape.png);
+  }
+
+  .section__picture:nth-child(odd) {
+    margin: 0 -50px 0 0;
+    shape-margin: 0.75em;
+    float: right;
+    shape-outside: url(img/book-right-shape.png);
+  }
+}
+
+@media (min-width: 360px) {
+  .section__picture {
+    display: none;
+  }
 }
