@@ -135,3 +135,35 @@ nav li {
   line-height: 1.25em;
   color: limegreen;
 }
+
+.book {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "cover"
+    "synopsis";
+  justify-items: center;
+  margin: 1em 0;
+}
+
+.book__title {
+  grid-area: "title";
+  color: white;
+  font-family: "Turret Road", cursive;
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.book__cover {
+  grid-area: "cover";
+  width: 90px;
+  filter: drop-shadow(1px 1px 50px hotpink);
+}
+
+.book__synopsis {
+  grid-area: "synopsis";
+}
+
+.book__synopsis > blockquote {
+  margin: 1em 1em;
+}
