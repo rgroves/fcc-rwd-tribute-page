@@ -157,7 +157,6 @@ nav li {
 
 .book__cover {
   grid-area: cover;
-  width: 90px;
   filter: drop-shadow(1px 1px 50px hotpink);
 }
 
