@@ -44,6 +44,7 @@ img {
 *******************************************************************************/
 html {
   background-color: #000;
+  font-size: 75%;
 }
 
 body {
@@ -147,7 +148,7 @@ nav li {
 }
 
 .book__title {
-  grid-area: "title";
+  grid-area: title;
   color: white;
   font-family: "Turret Road", cursive;
   font-size: 1.5em;
@@ -155,13 +156,13 @@ nav li {
 }
 
 .book__cover {
-  grid-area: "cover";
+  grid-area: cover;
   width: 90px;
   filter: drop-shadow(1px 1px 50px hotpink);
 }
 
 .book__synopsis {
-  grid-area: "synopsis";
+  grid-area: synopsis;
 }
 
 .book__synopsis > blockquote {
