@@ -110,14 +110,6 @@ p {
   grid-area: footer;
 }
 
-.main-container {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
-}
-
 nav > ul {
   display: flex;
   justify-content: center;
