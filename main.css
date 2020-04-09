@@ -65,7 +65,6 @@ p {
 }
 
 .header {
-  grid-area: header;
   text-align: center;
 }
 
@@ -89,7 +88,7 @@ p {
 }
 
 .content {
-  grid-area: content;
+  display: grid;
 }
 
 .section {
@@ -104,10 +103,6 @@ p {
   font-family: "Turret Road", cursive;
   color: limegreen;
   text-transform: uppercase;
-}
-
-.footer {
-  grid-area: footer;
 }
 
 nav > ul {
