@@ -42,9 +42,13 @@ img {
 /*******************************************************************************
 *** END RESET RULES
 *******************************************************************************/
+:root {
+  --font-size: 75%;
+}
+
 html {
   background-color: #000;
-  font-size: 75%;
+  font-size: var(--font-size);
 }
 
 body {
@@ -87,8 +91,44 @@ p {
   text-align: center;
 }
 
+#about {
+  grid-area: about;
+}
+
+#sprawl-trilogy {
+  grid-area: sprawl;
+}
+
+#bridge-trilogy {
+  grid-area: bridge;
+}
+
+#blue-ant-trilogy {
+  grid-area: blue-ant;
+}
+
+#more {
+  grid-area: more;
+}
+
+#credits {
+  grid-area: credits;
+}
+
+#static {
+  display: none;
+}
+
 .content {
   display: grid;
+  grid-template-areas:
+    "about"
+    "sprawl"
+    "bridge"
+    "blue-ant"
+    "more"
+    "credits";
+  justify-items: stretch;
 }
 
 .section {
@@ -127,8 +167,8 @@ nav li {
 .book {
   display: grid;
   grid-template-areas:
-    "title"
     "cover"
+    "title"
     "synopsis";
   justify-items: center;
   margin: 1em 0;
@@ -139,7 +179,7 @@ nav li {
   color: white;
   font-family: "Turret Road", cursive;
   font-size: 1.5em;
-  margin-bottom: 0.75em;
+  margin: 0.75em 0;
 }
 
 .book__cover {
@@ -153,4 +193,55 @@ nav li {
 
 .book__synopsis > blockquote {
   margin: 1em 1em;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --font-size: 90%;
+  }
+
+  body {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  #about {
+    margin: 2em 25%;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "about about about"
+      "sprawl sprawl sprawl"
+      "bridge bridge bridge"
+      "blue-ant blue-ant blue-ant"
+      "credits . more";
+  }
+
+  .books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trilogy-info {
+    grid-area: trilogy-info;
+  }
+
+  .book {
+    grid-template-rows: auto 3em 1fr;
+  }
+
+  .footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  #static {
+    display: block;
+    margin-top: 3em;
+    border-radius: 1em;
+    height: 50%;
+  }
 }
