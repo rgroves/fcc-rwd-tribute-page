@@ -134,7 +134,7 @@ p {
 .section {
   margin: 2em 0;
   padding: 1em;
-  box-shadow: inset 0 0 0.25em 0.25em limegreen, 0 0 0.75em 0.75em limegreen;
+  box-shadow: inset 0 0 0.25em 0.25em limegreen, 0 0 0.75em 0.5em limegreen;
   border-radius: 15px;
 }
 
@@ -184,7 +184,7 @@ nav li {
 
 .book__cover {
   grid-area: cover;
-  filter: drop-shadow(1px 1px 50px hotpink);
+  filter: drop-shadow(1px 1px 25px hotpink);
 }
 
 .book__synopsis {
